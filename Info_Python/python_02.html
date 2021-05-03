@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+	<html lang="ja">
+
+		<head>
+		  <title>対話モードによる実行</title>
+		  <meta charset="UTF-8">
+		</head>
+
+		<body>
+
+		  <p>ここでは、Pythonのインストール手順を簡単に紹介します。<br>
+		  時期や環境によって少し手順が変わってくることもあると思いますが、大体の流れは変わらないと思います。<br>
+		  pythonのインストールは以下の手順で行います。<br>
+		  (ここではWindowsでの環境を前提としています。)</p>	
+
+		  <table width="700" border="1" bgcolor="#FFFFCC" align="center">
+			<tbody>
+			  <tr>
+			    <td width="200"><div align="center">環境構築手順</div></td>
+			  </tr>
+			  <tr>
+			    <td>1,Python公式サイトから、Pythonパッケージをダウンロードします<br>
+			    	2,ダウンロードしたパッケージをインストールします。<br>
+			    	3,PowerShellでPythonを実行するときに必要となる、スクリプトの実行許可を設定します。<br>
+			    </td>
+			  </tr>
+			</tbody>
+		  </table>
+
+		  <h2>①Pythonパッケージのダウンロード</h2>
+		  <p>以下のリンク先からWindows用のインストーラをダウンロードします。<br>
+		  	(非公式ではありますが、簡単にインストール可能なインストールもあるみたいです。公式サイトでは少しわかりずらいという方におすすめ。)<br></p>
+		  <a href="https://www.python.org">Python公式サイト</a></p>
+		  <p><a href="https://pythonlinks.python.jp/">※非公式インストーラ</a><br>
+
+		  <h2>②Pythonパッケージのインストール</h2>
+		  <table width="700" border="1" bgcolor="#FFFFCC" align="center">
+			<tbody>
+			  <tr>
+			    <td width="200"><div align="center">インストール手順</div></td>
+			  </tr>
+			  <tr>
+			    <td>1,前述でダウンロードしたインストーラを実行します。<br>
+			    	2,"Add Python 3.x to PATH" をチェックします。<br>
+			    	3,Install now をクリックしてインストールを開始します。<br>
+			    </td>
+			  </tr>
+			</tbody>
+		  </table>
+
+		  <h2>③PowerShellの環境設定</h2>
+		  <p>PowerShellでスクリプトの実行を許可しておきます。<br>
+		  	スタートメニューで Windows PowerShell | Windows PowerShell を起動し、次のコマンドを実行します。<br>
+		  	このコマンドは、一番最初に一回だけ実行してください。2回目以降は不要です。<br>
+		  	おまじないと思いながら実行してもらえれば大丈夫です。
+		  </p>
+		  <table width="700" border="1" bgcolor="#FFFFCC" align="center">
+			<tbody>
+			  <tr>
+			    <td width="200"><div align="center">Set-ExecutionPolicy RemoteSigned -Scope CurrentUser -Force</div></td>
+			  </tr>
+			</tbody>
+		  </table>
+
+		  <p>以上でインストールの手順紹介は終了です。<br>
+		  	事項では簡単なプログラムの実行方法をご紹介します。
+		  </p>
+
+		</body>
+
+</html>
