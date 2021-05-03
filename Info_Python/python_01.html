@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+	<html lang="ja">
+
+		<head>
+		  <title>環境構築手順</title>
+		  <meta charset="UTF-8">
+		</head>
+
+		<link rel="stylesheet" href="stylesheet_pythonInfo.css">
+
+		<body>
+
+		  <p>ここでは、Pythonの環境構築手順を簡単に紹介します。<br>
+		  時期や環境によっては下記画面と少し異なることもあると思いますが、大体の流れは変わらないと思います。<br>
+		  pythonのインストールは以下の手順で行います。<br>
+		  (ここでは Windows10 64bit でのPython3.9.4環境構築を紹介します。)</p>	
+
+		  <table width="700" border="1" bgcolor="#FFFFCC" align="center">
+			<tbody>
+			  <tr>
+			    <td width="200"><div align="center">環境構築手順</div></td>
+			  </tr>
+			  <tr>
+			    <td>1,Python公式サイトから、Pythonパッケージをダウンロードします<br>
+			    	2,ダウンロードしたパッケージをインストールします。<br>
+			    	3,コマンドプロンプトよりPythonの起動を確認します。<br>
+			    </td>
+			  </tr>
+			</tbody>
+		  </table>
+
+		  <h2>1,Pythonパッケージのダウンロード</h2>
+		  <p>以下のリンク先からWindows用のインストーラをダウンロードします。<br>
+		  	また、Pythonをインストールする方法としてAnacondaを利用する方法もあります。AnacondaはNumpyといったpythonでよく用いるライブラリをまとめてインストールしてくれます。<br>
+		  	Anaconda に関する紹介は別項目を参照してください。
+		  </p>
+		  <p><a href="https://pythonlinks.python.jp/">インストーラダウンロード先</a><br>
+
+		  <p>
+		  	上記リンク先を開くと下のようなページが表示されるので、ページ上部の"Downloads"タブを選択します。
+		  </p>
+		  <p>
+			<img src="images/01_01.png" width="728" height="310" class="waku">
+		　</p>
+
+		　<p>
+		  	表示されるタブより"Windows"の項目を選択する。
+		  </p>
+		  <p>
+			<img src="images/01_02.png" width="728" height="310" class="waku">
+		　</p>
+
+		 <p>
+		  	遷移先ページ上部の"Latest Python 3 Release - Python 3.x.x"を選択。
+		  </p>
+		  <p>
+			<img src="images/01_03.png" width="728" height="310" class="waku">
+		　</p>
+
+		 <p>
+		  	遷移先ページ下のほうに行くと"File"という項目があるので、対応するインストーラーを選択して、ダウンロードしてください。<br>
+		  	保存場所は任意の場所で問題ありません。
+		  </p>
+		  <p>
+			<img src="images/01_05.png" width="728" height="310" class="waku">
+		　</p>
+
+		　<p>
+		  	以上で、公式サイトからのダウンロード手順は終了です。
+		  </p>
+
+		  <h2>2,Pythonパッケージのインストール</h2>
+
+		  <p>
+		  	ダウンロードしたファイルを実行してインストーラーを起動してください。<br>
+		  	起動すると下記画像のような画面が表示されるので、"Add Python 3.9 to PATH"にチェックをいれて、"Install now"を選択してください。<br>
+		  	※インストール場所の指定やインストールファイルを限定したい場合は、"Customize installation"を選択してください。<br>
+		  	[補足]"Add Python 3.9 to PATH"にチェックを入れることで、環境PATHに自動敵にPythonインストール先が登録されます。<br>
+		  	      チェックを入れ忘れても手動で環境PATHの設定は可能です。
+		  </p>
+		  <p>
+			<img src="images/01_08.png" class="waku">
+		　</p>
+
+		  <p>
+		  	インストール終了までしばらく待ちます。
+		  </p>
+		  <p>
+			<img src="images/01_09.png" class="waku">
+		　</p>
+
+		  <p>
+		  	インストールが終了すると下記画面が表示されるので、"Close"ボタンで作業を完了します。
+		  </p>
+		  <p>
+			<img src="images/01_10.png" class="waku">
+		　</p>
+
+		  <p>
+		  	以上でインストール作業は終了です。<br>
+		  	デフォルトの場合は下記のようなフォルダが作成されている思いますので、確認してください。
+		  </p>
+		  <p>
+			<img src="images/01_11.png" class="waku">
+		　</p>
+
+		  <h2>3,Pythonインストールの確認</h2>
+		  <p>コマンドプロンプトを起動します。(コマンドプロンプトの起動方法がわからないかたは以下を参考にしてください。)<br>
+		  	<p><a href="https://www.tipsfound.com/windows10/11008">コマンドプロンプト起動手順</a><br>
+		  	以下のように入力して実行します。<br>
+		  	<img src="images/01_12.png" class="waku"><br>
+		  	インストールしたPythonのバージョンが表示されるはずです。<br>
+		  	表示されていない場合は、環境PATHの設定ができていない可能性があるので環境PATH設定を確認してください。<br>
+		  	同様に、以下のコマンドを実行してください。ンストールされているpipのバージョンが確認できるはずです。<br>
+		  	※pipとはPython で利用できるパッケージのインストールを行う時に使用します。(インストールの際にカスタムでチェックを外している場合はインストールされません。)<br>
+		  	<img src="images/01_13.png" class="waku"><br>
+		  	上記のような表示がされれば、正しくPythonインストールフォルダへのPATHが通っています。
+		  </p>
+
+		  <p>以上で環境構築手順紹介は終了です。<br>
+		  	事項では簡単なプログラムの実行方法をご紹介します。
+		  </p>
+		  <br>
+
+		  次の学習項目-><a href="python_02.html">2,プログラムの実行</a>
+
+		</body>
+
+</html>
